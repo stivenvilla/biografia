@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cs/quiensoy.css">
+    <link rel="icon" href="#">
+    <title>QUIEN SOY</title>
+</head>
+<body>
+    <div class="container" id="blur">
+        <div class="content">
+            <h1>Le doy las gracias por querer conocer un poco acerca de mi vidad por favor dele click al boton de abrir.</h1>
+            <img src="despedida de 11.jpeg" alt="">
+            <a href="#" onclick="toggle()">ABRIR</a>
+            <a href="index.html">VOLVER</a>
+        </div>
+    </div>
+
+    <div id="popup">
+        <h2><b>HOLA</b></h2>
+        <p>Mi nombre es John Stiven Villa Grisales naci el 19 de abril de 2001 en este momento tengo 20 años soy del municipio de la union antioquia un municipio que es muy pequeño el cual tiene un clima frio lo que ayuda a que se puedan cultivar grandes productos como por ejemplo la papa. Siempre he estado en este municipio soy una persona que ha tenido que tener por muchas dificultades de salud pero que ha seguido en pie afrontando lo que se venga para la vidad por eso es que soy una persona tan dedicada y con mucha diciplina y puntualidad porque son valores que he adquirido en la lucha de la vida en la experiencia que me da todas las cosas que me han pasado asi que aca estoy estudiando para ser mejor cada dia</p>
+        <a href="#" onclick="toggle()">close</a>
+        
+    </div>
+
+    <script type="text/javascript">
+        function toggle(){
+            var blur = document.getElementById('blur');
+            blur.classList.toggle('active')
+            
+            var popup = document.getElementById('popup');
+            popup.classList.toggle('active')
+        
+        
+        }
+    
+    </script>
+    
+</body>
+</html>
